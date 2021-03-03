@@ -25,7 +25,17 @@ module.exports = {
         * 4. css-loader 作用: 处理 css 文件之间的依赖关系
         * 5. style-loader 作用: 将源代码的 css 文件内容通过`<style>` 标签插入到 HTML
         * */
-        use: ['style-loader', 'css-loader', 'sass-loader', 'postcss-loader'],
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true
+            }
+          },
+          'sass-loader',
+          'postcss-loader'
+        ],
       },
     ]
   },
