@@ -1,7 +1,7 @@
 import avatar from './未命名.png';
 import style from './index.scss'
 
-console.log(avatar);
+console.log(avatar, '111111111');
 let image = new Image()
 image.classList.add(style.img)
 image.src = avatar

@@ -10,6 +10,10 @@ module.exports = {
     main: path.resolve(__dirname, './src/index.js'),
     tttt: path.resolve(__dirname, './src/index.js'),
   },
+  // 6️⃣ 使用 webpackDevServer 热更新
+  devServer: {
+    contentBase: path.resolve(__dirname, './dist'),
+  },
   // 1️⃣ webpack 默认认识 .js 文件, 其他文件需要使用 module 进行配置,使用相应的 loader 处理
   module: {
     rules: [
