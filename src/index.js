@@ -6,6 +6,7 @@ let image = new Image()
 image.classList.add(style.img)
 image.src = avatar
 document.querySelector('#root').appendChild(image)
+// console.leg(111)
 
 console.log(avatar);
 let image1 = new Image()

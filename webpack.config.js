@@ -4,6 +4,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
+  // devtool: 'cheap-module-source-map', // 生产环境
+  devtool: 'eval-cheap-module-source-map', // 开发环境
   entry:{
     main: path.resolve(__dirname, './src/index.js'),
     tttt: path.resolve(__dirname, './src/index.js'),

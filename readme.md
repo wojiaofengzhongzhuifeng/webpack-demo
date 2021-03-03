@@ -18,3 +18,5 @@
 
 - ✅ 自定义 dist/index.html js 引入路径
 
+- ✅ sourcemap 映射源代码与打包后代码
+
