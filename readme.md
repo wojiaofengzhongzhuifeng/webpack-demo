@@ -16,3 +16,5 @@
 
 - ✅ 使用 clean-webpack-plugin 初始化打包目录
 
+- ✅ 自定义 dist/index.html js 引入路径
+

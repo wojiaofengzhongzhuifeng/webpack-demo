@@ -52,6 +52,12 @@ module.exports = {
     ]
   },
   output: {
+    /*
+    * 5️⃣ 使用 publicPath 控制打包后的 js 文件
+    * 如果没有 publicPath, 那么 dist.index.html 的 js 引入方式为 `<script defer src="main.js"></script>`
+    * 如果有 publicPath, 那么 dist.index.html 的 js 引入方式为 `<script defer src="http://www.baidu.com/main.js"></script>`
+    * */
+    // publicPath: 'http://www.baidu.com',
     filename: '[name].js',
     path: path.resolve(__dirname, './dist')
   },
