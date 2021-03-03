@@ -4,7 +4,10 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry:path.resolve(__dirname, './src/index.js'),
+  entry:{
+    main: path.resolve(__dirname, './src/index.js'),
+    tttt: path.resolve(__dirname, './src/index.js'),
+  },
   // 1️⃣ webpack 默认认识 .js 文件, 其他文件需要使用 module 进行配置,使用相应的 loader 处理
   module: {
     rules: [
@@ -49,7 +52,7 @@ module.exports = {
     ]
   },
   output: {
-    filename: 'dist.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, './dist')
   },
   // 4️⃣ 在打包目录生成 html ,并且将打包生成的 js 在 html 中引用
