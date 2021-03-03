@@ -5,10 +5,15 @@ module.exports = {
   // 1️⃣ webpack 默认认识 .js 文件, 其他文件需要使用 module 进行配置,使用相应的 loader 处理
   module: {
     rules: [{
-      test: /\.png$/,
+      test: /\.(png|jpg|gif)$/,
       use: {
-        loader: 'file-loader'
-      }
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'images'
+        }
+      },
+
     }]
   },
   output: {
