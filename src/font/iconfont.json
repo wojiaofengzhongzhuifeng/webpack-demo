@@ -1,0 +1,23 @@
+{
+  "id": "2398573",
+  "name": "webpack",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "20034689",
+      "name": "05会议培训记要",
+      "font_class": "05huiyipeixunjiyao",
+      "unicode": "e6e5",
+      "unicode_decimal": 59109
+    },
+    {
+      "icon_id": "20034690",
+      "name": "04学习分享",
+      "font_class": "04xuexifenxiang",
+      "unicode": "e6e4",
+      "unicode_decimal": 59108
+    }
+  ]
+}

@@ -12,3 +12,7 @@ let image1 = new Image()
 image1.classList.add('img')
 image1.src = avatar
 document.querySelector('#root').appendChild(image1)
+
+let iconCt = document.createElement('div')
+iconCt.innerHTML = `<div class="${style.iconfont} ${style['icon-04xuexifenxiang']}"></div>`
+document.querySelector('#root').appendChild(iconCt)
