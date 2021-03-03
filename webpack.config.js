@@ -15,6 +15,18 @@ module.exports = {
           }
         },
       },
+      {
+        test: /\.(scss)$/,
+        /*
+        * 3️⃣
+        * 1. 先使用 postcss-loader, sass-loader, css-loader, 再使用 style-loader 处理
+        * 2. postcss-loader 作用: 添加 css 属性前缀
+        * 3. sass-loader 作用: 处理 scss 语法
+        * 4. css-loader 作用: 处理 css 文件之间的依赖关系
+        * 5. style-loader 作用: 将源代码的 css 文件内容通过`<style>` 标签插入到 HTML
+        * */
+        use: ['style-loader', 'css-loader', 'sass-loader', 'postcss-loader'],
+      },
     ]
   },
   output: {
