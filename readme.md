@@ -11,3 +11,6 @@
     - 添加局部作用域
   
 - ✅ 支持自定义字体文件 [commit](https://github.com/wojiaofengzhongzhuifeng/webpack-demo/commit/c579e81861c1cfb90fae7975cc958557df875f67)
+
+- ✅ 使用 html-webpack-plugin 自动生成 HTML 文件
+

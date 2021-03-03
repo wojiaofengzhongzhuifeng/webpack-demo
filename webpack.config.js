@@ -1,4 +1,6 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   mode: 'development',
   entry:path.resolve(__dirname, './src/index.js'),
@@ -48,5 +50,9 @@ module.exports = {
   output: {
     filename: 'test.js',
     path: path.resolve(__dirname, './dist')
-  }
+  },
+  // 4️⃣ 在打包目录生成 html ,并且将打包生成的 js 在 html 中引用
+  plugins: [new HtmlWebpackPlugin({
+    template: path.resolve(__dirname, './src/index.html')
+  })]
 }
