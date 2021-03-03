@@ -7,10 +7,10 @@ module.exports = {
     rules: [{
       test: /\.(png|jpg|gif)$/,
       use: {
-        loader: 'file-loader',
+        // 2️⃣ 使用 url-loader 如果文件大于 2kb 的话,使用 file-loader 小于 2kb 的话,使用 url-loader
+        loader: 'url-loader',
         options: {
-          name: '[name].[ext]',
-          outputPath: 'images'
+          limit: 2048,
         }
       },
 
