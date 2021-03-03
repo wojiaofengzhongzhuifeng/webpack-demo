@@ -14,3 +14,5 @@
 
 - ✅ 使用 html-webpack-plugin 自动生成 HTML 文件
 
+- ✅ 使用 clean-webpack-plugin 初始化打包目录
+
