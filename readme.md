@@ -38,5 +38,7 @@
   
   - 异步加载 lodash
   
+  - lazy loading
+  
 
 
