@@ -12,13 +12,19 @@
   
 - ✅ 支持自定义字体文件 [commit](https://github.com/wojiaofengzhongzhuifeng/webpack-demo/commit/c579e81861c1cfb90fae7975cc958557df875f67)
 
-- ✅ 使用 html-webpack-plugin 自动生成 HTML 文件
+- ✅ 使用 html-webpack-plugin 自动生成 HTML 文件 [commit](https://github.com/wojiaofengzhongzhuifeng/webpack-demo/commit/38f2b1499a6ae26e9aba6942f6d160cc668f729d)
 
-- ✅ 使用 clean-webpack-plugin 初始化打包目录
+- ✅ 使用 clean-webpack-plugin 初始化打包目录 [commit](https://github.com/wojiaofengzhongzhuifeng/webpack-demo/commit/b1191f818827b59624fa29b2c8f2a7ce2789e7c5)
 
-- ✅ 自定义 dist/index.html js 引入路径
+- ✅ 配置 `output.publicPath` 自定义 dist/index.html js 引入路径 [commit](https://github.com/wojiaofengzhongzhuifeng/webpack-demo/commit/fb59d2e2cfbd8e722d49009a6b82f1cd60bcf6c1)
 
-- ✅ sourcemap 映射源代码与打包后代码
+- ✅ sourcemap 映射源代码与打包后代码 [commit](https://github.com/wojiaofengzhongzhuifeng/webpack-demo/commit/6aaf6b502e1be9bdd33d96d5a842a9badc833f67)
 
 - ✅ babel 处理高级语法
+
+  - 业务代码 @babel/preset-env [commit](https://github.com/wojiaofengzhongzhuifeng/webpack-demo/commit/aaa791b436fa60e5541445bd623b7065533f8958)
+  
+  - 类库代码 @babel/plugin-transform-runtime [commit](https://github.com/wojiaofengzhongzhuifeng/webpack-demo/commit/008befd36e6ef77470915a789f9b8940dac17d65)
+  
+  - react 环境 [commit](https://github.com/wojiaofengzhongzhuifeng/webpack-demo/commit/c14a234bde4de775f970a7beb38c85fb4dea24c4)
 
