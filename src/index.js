@@ -73,3 +73,8 @@ console.log(_.join([1, 2, 3], ' '));
 // getComponent().then((element)=>{
 //   document.querySelector('#root').appendChild(element);
 // });
+document.addEventListener('click', (e)=>{
+  import(/* webpackPrefetch: true */ './click').then(({default: func})=>{
+    func();
+  });
+});
