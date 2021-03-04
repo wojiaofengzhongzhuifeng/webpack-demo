@@ -81,13 +81,17 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: [['@babel/preset-env', {
-              targets: {
-                "chrome": "58",
-                "ie": "11"
-              },
-              useBuiltIns: "usage"
-            }]],
+            presets: [
+              [
+                '@babel/preset-env', {
+                  targets: {
+                    "chrome": "58",
+                    "ie": "11"
+                  },
+                  useBuiltIns: "usage"
+                }
+              ]
+            ],
           },
           // options: {
           //   "plugins": [
