@@ -2,6 +2,8 @@ import "@babel/polyfill";
 import avatar from './未命名.png';
 import style from './index.scss'
 import style1 from './image.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 console.log(avatar, '111111111');
 let image = new Image()
@@ -40,3 +42,12 @@ const arr = [
   new Promise(()=>{}),
   new Promise(()=>{}),
 ];
+
+class App extends React.Component{
+  render() {
+    return(
+      <div>test1</div>
+    )
+  }
+}
+ReactDOM.render(<App />, document.querySelector('#root2'))
