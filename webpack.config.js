@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const webpack = require('webpack')
 
 module.exports = {
   mode: 'development',
@@ -8,11 +9,12 @@ module.exports = {
   devtool: 'eval-cheap-module-source-map', // 开发环境
   entry:{
     main: path.resolve(__dirname, './src/index.js'),
-    tttt: path.resolve(__dirname, './src/index.js'),
+    // tttt: path.resolve(__dirname, './src/index.js'),
   },
   // 6️⃣ 使用 webpackDevServer 热更新
   devServer: {
     contentBase: path.resolve(__dirname, './dist'),
+    hot: true,
   },
   // 1️⃣ webpack 默认认识 .js 文件, 其他文件需要使用 module 进行配置,使用相应的 loader 处理
   module: {
@@ -86,5 +88,7 @@ module.exports = {
       template: path.resolve(__dirname, './src/index.html')
     }),
     new CleanWebpackPlugin(),
+    // 7️⃣ 使用 HMR 插件处理局部更新模块
+    new webpack.HotModuleReplacementPlugin()
   ]
 }
