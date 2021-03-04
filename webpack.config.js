@@ -128,9 +128,5 @@ const commonConfig = {
     // 7️⃣ 使用 HMR 插件处理局部更新模块
     new webpack.HotModuleReplacementPlugin()
   ],
-  // 9️⃣ 配置 tree-shaking
-  optimization: {
-    usedExports: true
-  }
 }
 module.exports = commonConfig
