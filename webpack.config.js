@@ -50,6 +50,19 @@ module.exports = {
         ],
       },
       {
+        test: /\.(css)$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true
+            }
+          },
+          'postcss-loader'
+        ],
+      },
+      {
         test: /\.(eot|ttf|svg|woff|woff2)$/,
         use: [
           'file-loader',
