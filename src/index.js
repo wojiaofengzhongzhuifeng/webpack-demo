@@ -57,4 +57,19 @@ ReactDOM.render(<App />, document.querySelector('#root2'))
 
 sum(1,2)
 
-console.log(_.join([1, 2, 3], '*****'));
+console.log(_.join([1, 2, 3], ' '));
+
+
+// // 异步 import 外部库
+// function getComponent(){
+//   return import(/*webpackChunkName:"lodash"*/'lodash').then(({default: _})=>{
+//     console.log(_);
+//     let joinedString = _.join([1,2,3], '#$#$#$');
+//     let div = document.createElement('div');
+//     div.innerText = joinedString;
+//     return div;
+//   });
+// }
+// getComponent().then((element)=>{
+//   document.querySelector('#root').appendChild(element);
+// });

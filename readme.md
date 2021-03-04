@@ -32,6 +32,11 @@
 
 - 区分研发环境与生产环境 
 
-- code splitting 
+- ❌ code splitting 
+  
+  - 同步加载 lodash
+  
+  - 异步加载 lodash
+  
 
 
