@@ -8,4 +8,9 @@ const commonObj = require('./webpack.config');
 module.exports = Object.assign({}, commonObj, {
   mode: 'production',
   devtool: 'cheap-module-source-map', // 生产环境
+  optimization: {
+    splitChunks:{
+      chunks: 'all'
+    }
+  }
 })

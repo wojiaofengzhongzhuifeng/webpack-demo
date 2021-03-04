@@ -7,9 +7,13 @@ const commonObj = require('./webpack.config');
 
 module.exports = Object.assign({}, commonObj, {
   mode: 'development',
-  devtool: 'eval-cheap-module-source-map', // 开发环境
+  devtool: 'eval-cheap-module-source-map',
   // 9️⃣ 配置 tree-shaking
   optimization: {
-    usedExports: true
+    usedExports: true,
+    // 配置 code splitting
+    splitChunks:{
+      chunks: 'all'
+    }
   }
 })

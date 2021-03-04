@@ -6,6 +6,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {sum} from './math';
 import "./test.css";
+import _ from 'lodash';
 
 console.log(avatar, '111111111');
 let image = new Image()
@@ -55,3 +56,5 @@ class App extends React.Component{
 ReactDOM.render(<App />, document.querySelector('#root2'))
 
 sum(1,2)
+
+console.log(_.join([1, 2, 3], '*****'));
