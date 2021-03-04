@@ -28,3 +28,6 @@
   
   - 处理 react 环境 [@babel/preset-react](https://github.com/wojiaofengzhongzhuifeng/webpack-demo/commit/c14a234bde4de775f970a7beb38c85fb4dea24c4)
 
+- tree shaking 的配置
+
+
