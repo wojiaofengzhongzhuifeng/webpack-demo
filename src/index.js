@@ -1,4 +1,4 @@
-import "@babel/polyfill";
+// import "@babel/polyfill";
 import avatar from './未命名.png';
 import style from './index.scss'
 import style1 from './image.css';
