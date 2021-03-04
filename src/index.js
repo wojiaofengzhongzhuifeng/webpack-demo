@@ -4,6 +4,8 @@ import style from './index.scss'
 import style1 from './image.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {sum} from './math';
+import "./test.css";
 
 console.log(avatar, '111111111');
 let image = new Image()
@@ -51,3 +53,5 @@ class App extends React.Component{
   }
 }
 ReactDOM.render(<App />, document.querySelector('#root2'))
+
+sum(1,2)
