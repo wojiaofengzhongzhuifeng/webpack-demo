@@ -1,3 +1,4 @@
+import "@babel/polyfill";
 import avatar from './未命名.png';
 import style from './index.scss'
 import style1 from './image.css';
@@ -33,3 +34,9 @@ btn.onclick = ()=>{
   div.innerText = count
   document.querySelector('#root').appendChild(div)
 }
+
+// use es6
+const arr = [
+  new Promise(()=>{}),
+  new Promise(()=>{}),
+];

@@ -70,6 +70,23 @@ module.exports = {
           'file-loader',
         ],
       },
+      // 8️⃣ 使用 babel 处理高级 js 语法
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: [['@babel/preset-env', {
+              targets: {
+                "chrome": "58",
+                "ie": "11"
+              },
+              useBuiltIns: "usage"
+            }]],
+          }
+        }
+      }
     ]
   },
   output: {
