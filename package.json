@@ -5,9 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx webpack",
-    "start": "npx webpack serve"
+    "build": "npx webpack --config webpack.prod.config.js",
+    "start": "npx webpack serve --config webpack.dev.config.js"
   },
   "keywords": [],
   "author": "",

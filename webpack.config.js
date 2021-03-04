@@ -3,10 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack')
 
-module.exports = {
-  mode: 'development',
-  // devtool: 'cheap-module-source-map', // 生产环境
-  devtool: 'eval-cheap-module-source-map', // 开发环境
+const commonConfig = {
   entry:{
     main: path.resolve(__dirname, './src/index.js'),
     // tttt: path.resolve(__dirname, './src/index.js'),
@@ -136,3 +133,4 @@ module.exports = {
     usedExports: true
   }
 }
+module.exports = commonConfig
