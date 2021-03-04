@@ -40,5 +40,5 @@
   
   - lazy loading
   
-
+- providerPlugin 注入全局变量(webpack5 已经内置,不需要额外配置)
 

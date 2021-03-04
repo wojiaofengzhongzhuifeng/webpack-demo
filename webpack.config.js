@@ -126,7 +126,10 @@ const commonConfig = {
     }),
     new CleanWebpackPlugin(),
     // 7️⃣ 使用 HMR 插件处理局部更新模块
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.ProvidePlugin({
+      $: 'lodash'
+    })
   ],
 }
 module.exports = commonConfig

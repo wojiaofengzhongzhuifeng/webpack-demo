@@ -7,6 +7,7 @@ import ReactDOM from 'react-dom';
 import {sum} from './math';
 import "./test.css";
 import _ from 'lodash';
+import createString from "./lodashUtils";
 
 console.log(avatar, '111111111');
 let image = new Image()
@@ -78,3 +79,5 @@ document.addEventListener('click', (e)=>{
     func();
   });
 });
+
+console.log(createString());
