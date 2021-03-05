@@ -42,4 +42,4 @@
   
 - ✅ providerPlugin 注入全局变量(webpack5 已经内置,不需要额外配置)[commit](https://github.com/wojiaofengzhongzhuifeng/webpack-demo/commit/9f981e6102a7676451d1dde3300d47c897854b74)
 
-- ✅ 传递变量: package.json 的 script 脚本 => `*.js` [commit]()
+- ✅ 传递变量: package.json 的 script 脚本 => `*.js` [commit](https://github.com/wojiaofengzhongzhuifeng/webpack-demo/commit/97032526392e9516b2f14398479e2ed89e014aa6)
