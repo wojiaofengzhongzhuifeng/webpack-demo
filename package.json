@@ -8,7 +8,8 @@
     "build": "npx webpack --config webpack.prod.config.js",
     "start": "npx webpack serve --config webpack.dev.config.js",
     "start:build": "npx webpack --config webpack.dev.config.js",
-    "inject": "npx webpack --env NODE_ENV=local test=123321 --config webpack.test.js"
+    "inject": "npx webpack --env NODE_ENV=local test=123321 --config webpack.test.js",
+    "test": "npx webpack --env test33=3333 --config test333333.js"
   },
   "keywords": [],
   "author": "",

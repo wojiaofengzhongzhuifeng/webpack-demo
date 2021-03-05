@@ -28,9 +28,9 @@
   
   - 处理 react 环境 [@babel/preset-react](https://github.com/wojiaofengzhongzhuifeng/webpack-demo/commit/c14a234bde4de775f970a7beb38c85fb4dea24c4)
 
-- 研发环境配置 tree shaking 
+- ✅ 研发环境配置 tree shaking [commit](https://github.com/wojiaofengzhongzhuifeng/webpack-demo/commit/d6beae597bb97e515b42db5ff4bb06a6183f8fa4)
 
-- 区分研发环境与生产环境 
+- ✅ 区分研发环境与生产环境 
 
 - ❌ code splitting 
   
@@ -40,6 +40,6 @@
   
   - lazy loading
   
-- providerPlugin 注入全局变量(webpack5 已经内置,不需要额外配置)
+- ✅ providerPlugin 注入全局变量(webpack5 已经内置,不需要额外配置)[commit](https://github.com/wojiaofengzhongzhuifeng/webpack-demo/commit/9f981e6102a7676451d1dde3300d47c897854b74)
 
-- ✅ 执行脚本时，传递变量给脚本执行文件 
+- ✅ 传递变量: package.json 的 script 脚本 => `*.js` [commit]()
