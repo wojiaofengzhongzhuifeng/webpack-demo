@@ -12,6 +12,8 @@ const commonConfig = {
   devServer: {
     contentBase: path.resolve(__dirname, './dist'),
     hot: true,
+    // 解决 browerRouter 访问 404 问题
+    historyApiFallback: false,
     proxy: {
       '/react/api': {
         target: 'http://www.dell-lee.com',
