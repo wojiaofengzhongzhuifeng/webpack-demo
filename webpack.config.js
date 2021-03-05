@@ -12,6 +12,14 @@ const commonConfig = {
   devServer: {
     contentBase: path.resolve(__dirname, './dist'),
     hot: true,
+    proxy: {
+      '/react/api': {
+        target: 'http://www.dell-lee.com',
+        pathRewrite: {
+          'header.json': 'demo.json'
+        }
+      }
+    }
   },
   // 1️⃣ webpack 默认认识 .js 文件, 其他文件需要使用 module 进行配置,使用相应的 loader 处理
   module: {

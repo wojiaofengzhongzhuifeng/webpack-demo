@@ -8,6 +8,7 @@ import {sum} from './math';
 import "./test.css";
 import _ from 'lodash';
 import createString from "./lodashUtils";
+import axios from "axios";
 
 console.log(avatar, '111111111');
 let image = new Image()
@@ -48,6 +49,13 @@ const arr = [
 ];
 
 class App extends React.Component{
+
+  componentDidMount() {
+    axios.get('/react/api/header.json').then((res)=>{
+      console.log(res);
+    });
+  }
+
   render() {
     return(
       <div>test1</div>
